@@ -23,15 +23,15 @@
 
 - Research the [gem](https://github.com/leshill/handlebars_assets) we are using and see how to work with it.
 
-- I have done all of this for you, but here are the steps for including Handlebars in a Rails App 
+- I have done all of this for you, but here are the steps for including Handlebars in a Rails App:
 
 
-- gem install `handlebars_assets`
-- create a folder called `templates` in your javascripts file
-- add the required files in application.js
+	- gem install `handlebars_assets`
+	- create a folder called `templates` in your javascripts file
+	- add the required files in application.js
 
-```
-//= require handlebars.runtime
-//= require_tree ./templates
-```
-- create a folder in the templates folder for each controller and then include your `.hbs` files in the respective folders
+	```
+	//= require handlebars.runtime
+	//= require_tree ./templates
+	```
+	- create a folder in the templates folder for each controller and then 	include your `.hbs` files in the respective folders
