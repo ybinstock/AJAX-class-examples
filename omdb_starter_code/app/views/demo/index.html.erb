@@ -1,0 +1,21 @@
+<div class="container text-center">
+		<h2>Search for movies</h2>
+		<%= form_tag ('javascript:void(0);'), class: "movieSearch" %>
+			<p>
+				<%= label_tag "title" %>
+				<%= text_field_tag "title", nil, autofocus: true, class: "yourmomma"%>
+			</p>
+			<p>
+				<%= submit_tag "Search" , class: "btn btn-info" %>
+			</p>
+
+		<!-- This is a nice little spinning gif I threw in -->
+		<div class="loading">
+			<%= image_tag "loader.gif", style: "margin-top:20px; width:100px;" %>
+		</div>
+
+		<!-- When the AJAX call is done...the data from omdb's API should go here -->
+		<div id="movieData">
+
+		</div>
+</div>
